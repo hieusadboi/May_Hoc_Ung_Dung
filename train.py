@@ -38,23 +38,6 @@ for value in y:
 print(f"📊 Số lượng lừa đảo ( 0 ): {count_0}")
 print(f"📊 Số lượng Không lừa đảo ( 2 ): {count_2}")
 
-import matplotlib.pyplot as plt
-
-X = df.drop(columns=["Result"])
-y = df["Result"]
-
-count_0 = 0
-count_2 = 0
-
-for value in y:
-    if value == 0:
-        count_0 += 1
-    elif value == 2:
-        count_2 += 1
-
-print(f"📊 Số lượng lừa đảo ( 0 ): {count_0}")
-print(f"📊 Số lượng Không lừa đảo ( 2 ): {count_2}")
-
 # Vẽ biểu đồ tròn
 data = [count_0, count_2]
 labels = ["Lừa đảo (0)", "Không lừa đảo (2)"]
